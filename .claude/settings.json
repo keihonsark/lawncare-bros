@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx --yes create-vite tempproject --template react)",
+      "Bash(cp -r tempproject/* tempproject/.* .)",
+      "Bash(rm -rf tempproject)",
+      "Bash(npm install:*)",
+      "Bash(npx vite:*)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174/estimate)",
+      "Bash(curl -s -o /dev/null -w \" %{http_code}\" http://localhost:5174/estimate)"
+    ]
+  }
+}
