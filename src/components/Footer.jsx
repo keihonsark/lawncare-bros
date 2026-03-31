@@ -57,6 +57,11 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      <div className="footer__admin">
+        <div className="container">
+          <a href="https://lawncarebros.base44.app/" target="_blank" rel="noopener noreferrer">Admin Login</a>
+        </div>
+      </div>
     </footer>
   )
 }
