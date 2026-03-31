@@ -6,37 +6,37 @@ import useFadeUp from '../../hooks/useFadeUp'
 import './ServicePage.css'
 
 const included = [
-  'Ground prep & grading',
-  'Old grass removal',
-  'Premium sod selection',
-  'Professional installation',
-  'Roller compaction',
-  'Aftercare instructions',
+  'Sprinkler system installation',
+  'Drip irrigation setup',
+  'System repair & troubleshooting',
+  'Head replacement & adjustment',
+  'Timer & controller programming',
+  'Seasonal system tune-ups',
 ]
 
 const process = [
-  'Free estimate & measurement',
-  'We prep the ground',
-  'Sod is installed',
-  'We walk you through aftercare',
+  'Free on-site assessment',
+  'Custom system design',
+  'Professional installation',
+  'Testing & walkthrough',
 ]
 
 const faqs = [
   {
-    q: 'How long until I can walk on new sod?',
-    a: 'We recommend staying off new sod for at least 2–3 weeks to allow the roots to establish. Light foot traffic is fine after that, but avoid heavy use for about 4–6 weeks.',
+    q: 'How do I know if my sprinkler system needs repair?',
+    a: "Look for dry patches, pooling water, low pressure, or heads that don't pop up. If your water bill spikes unexpectedly, that's another sign of a leak or malfunction.",
   },
   {
-    q: 'What type of sod works best in Fresno?',
-    a: 'Bermuda grass is the most popular choice for Fresno — it thrives in heat and handles heavy sun. Tall Fescue is another option for partially shaded yards. We help you choose the best variety for your property.',
+    q: 'Do you install drip irrigation for garden beds?',
+    a: "Absolutely. Drip irrigation is ideal for flower beds, vegetable gardens, and trees. It delivers water directly to the roots, reducing waste and keeping your plants healthier.",
   },
   {
-    q: 'Do you remove old grass first?',
-    a: 'Yes. Proper sod installation starts with removing the old lawn, grading the soil, and prepping the surface. We handle all of that before laying a single roll of sod.',
+    q: 'How long does a sprinkler installation take?',
+    a: "Most residential installations take 1–2 days depending on yard size and system complexity. We handle everything from trenching to wiring the controller.",
   },
   {
-    q: 'How soon should I water after installation?',
-    a: "Immediately! New sod needs to be watered within 30 minutes of installation. For the first 2 weeks, water 2–3 times daily to keep the sod and soil moist. We'll give you a detailed aftercare schedule.",
+    q: 'Can you add zones to my existing system?',
+    a: "Yes. We can expand your current system with additional zones, heads, or drip lines to cover new landscaping or areas that aren't getting enough water.",
   },
 ]
 
@@ -46,8 +46,8 @@ const reviews = [
     text: "I've been using the Lawncare Bros for about a year and I can't get over how great these young men do!! Very professional, always on time. I really recommend them to everyone — you will be 100% satisfied!",
   },
   {
-    name: 'Irvin S.',
-    text: 'I spotted these guys in Clovis and asked for a quote — extremely professional and provided excellent service. Highly recommend!',
+    name: 'Messiah O.',
+    text: 'Very professional, always make sure to leave my yard looking clean and sharp.',
   },
 ]
 
@@ -63,7 +63,7 @@ function Stars() {
   )
 }
 
-export default function SodInstallation() {
+export default function IrrigationSystems() {
   const [openFaq, setOpenFaq] = useState(null)
   useFadeUp()
 
@@ -72,11 +72,11 @@ export default function SodInstallation() {
       <Navbar />
 
       <section className="sp-hero">
-        <img src="/03_sod_installation.png" alt="" className="sp-hero__img" />
+        <img src="/06_sprinkler_system.png" alt="" className="sp-hero__img" />
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">Sod Installation in Fresno & Clovis</h1>
-          <p className="sp-hero__sub">Get a lush, green lawn instantly — no waiting, no guessing.</p>
+          <h1 className="sp-hero__title">Irrigation Systems in Fresno & Clovis</h1>
+          <p className="sp-hero__sub">Sprinkler and drip system installation and repair for efficient, reliable watering.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>
       </section>

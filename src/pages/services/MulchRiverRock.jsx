@@ -6,44 +6,44 @@ import useFadeUp from '../../hooks/useFadeUp'
 import './ServicePage.css'
 
 const included = [
-  'Ground prep & grading',
-  'Old grass removal',
-  'Premium sod selection',
-  'Professional installation',
-  'Roller compaction',
-  'Aftercare instructions',
+  'Mulch delivery & spreading',
+  'River rock installation',
+  'Weed barrier placement',
+  'Old material removal',
+  'Bed edging & prep',
+  'Clean & even coverage',
 ]
 
 const process = [
-  'Free estimate & measurement',
-  'We prep the ground',
-  'Sod is installed',
-  'We walk you through aftercare',
+  'Free estimate & material selection',
+  'We prep the beds',
+  'Material delivered & installed',
+  'Final cleanup & inspection',
 ]
 
 const faqs = [
   {
-    q: 'How long until I can walk on new sod?',
-    a: 'We recommend staying off new sod for at least 2–3 weeks to allow the roots to establish. Light foot traffic is fine after that, but avoid heavy use for about 4–6 weeks.',
+    q: 'What type of mulch do you recommend for Fresno?',
+    a: "We typically recommend bark mulch or wood chips for most Fresno landscapes. They retain moisture well in the heat, suppress weeds, and break down slowly to feed the soil.",
   },
   {
-    q: 'What type of sod works best in Fresno?',
-    a: 'Bermuda grass is the most popular choice for Fresno — it thrives in heat and handles heavy sun. Tall Fescue is another option for partially shaded yards. We help you choose the best variety for your property.',
+    q: 'How often should mulch be replaced?',
+    a: "In Fresno's climate, we recommend refreshing mulch once a year — usually in spring. River rock is more permanent and rarely needs replacement.",
   },
   {
-    q: 'Do you remove old grass first?',
-    a: 'Yes. Proper sod installation starts with removing the old lawn, grading the soil, and prepping the surface. We handle all of that before laying a single roll of sod.',
+    q: 'Do you install weed barrier underneath?',
+    a: "Yes. We always lay landscape fabric under rock installations and offer it as an option for mulch beds. It dramatically reduces weed growth and keeps your beds looking clean longer.",
   },
   {
-    q: 'How soon should I water after installation?',
-    a: "Immediately! New sod needs to be watered within 30 minutes of installation. For the first 2 weeks, water 2–3 times daily to keep the sod and soil moist. We'll give you a detailed aftercare schedule.",
+    q: 'Can I mix mulch and river rock in the same yard?',
+    a: "Absolutely. Many of our clients use river rock in high-traffic or decorative areas and mulch around plants and trees. We can help you design the best layout for your property.",
   },
 ]
 
 const reviews = [
   {
-    name: 'Abraham A.',
-    text: "I've been using the Lawncare Bros for about a year and I can't get over how great these young men do!! Very professional, always on time. I really recommend them to everyone — you will be 100% satisfied!",
+    name: 'Emiliano A.',
+    text: 'Absolutely top-notch! Professional, reliable, and extremely detail-oriented. Clean edges, perfect mowing lines, and thoughtful touches that make the yard look incredible.',
   },
   {
     name: 'Irvin S.',
@@ -63,7 +63,7 @@ function Stars() {
   )
 }
 
-export default function SodInstallation() {
+export default function MulchRiverRock() {
   const [openFaq, setOpenFaq] = useState(null)
   useFadeUp()
 
@@ -72,11 +72,11 @@ export default function SodInstallation() {
       <Navbar />
 
       <section className="sp-hero">
-        <img src="/03_sod_installation.png" alt="" className="sp-hero__img" />
+        <img src="/mulch.png" alt="" className="sp-hero__img" />
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">Sod Installation in Fresno & Clovis</h1>
-          <p className="sp-hero__sub">Get a lush, green lawn instantly — no waiting, no guessing.</p>
+          <h1 className="sp-hero__title">Mulch & River Rock Installation in Fresno & Clovis</h1>
+          <p className="sp-hero__sub">Decorative ground cover that protects your plants and boosts curb appeal.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>
       </section>

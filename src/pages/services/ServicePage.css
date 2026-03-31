@@ -145,6 +145,19 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.sp-why__card--google {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sp-why__stars {
+  font-size: 1.5rem;
+  color: #f5a623;
+  letter-spacing: 2px;
+}
+
 /* Process */
 .sp-process {
   padding: 5rem 0;

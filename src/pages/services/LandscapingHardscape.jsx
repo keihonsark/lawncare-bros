@@ -6,48 +6,48 @@ import useFadeUp from '../../hooks/useFadeUp'
 import './ServicePage.css'
 
 const included = [
-  'Ground prep & grading',
-  'Old grass removal',
-  'Premium sod selection',
-  'Professional installation',
-  'Roller compaction',
-  'Aftercare instructions',
+  'Full landscape design',
+  'Cement & concrete work',
+  'Retaining walls',
+  'Garden bed creation',
+  'Walkways & patios',
+  'Outdoor construction',
 ]
 
 const process = [
-  'Free estimate & measurement',
-  'We prep the ground',
-  'Sod is installed',
-  'We walk you through aftercare',
+  'Free consultation & vision',
+  'We design the plan',
+  'Construction begins',
+  'Final walkthrough & cleanup',
 ]
 
 const faqs = [
   {
-    q: 'How long until I can walk on new sod?',
-    a: 'We recommend staying off new sod for at least 2–3 weeks to allow the roots to establish. Light foot traffic is fine after that, but avoid heavy use for about 4–6 weeks.',
+    q: 'What types of hardscape do you install?',
+    a: "We handle concrete walkways, patios, retaining walls, garden borders, and more. If it involves building something in your yard, we can do it.",
   },
   {
-    q: 'What type of sod works best in Fresno?',
-    a: 'Bermuda grass is the most popular choice for Fresno — it thrives in heat and handles heavy sun. Tall Fescue is another option for partially shaded yards. We help you choose the best variety for your property.',
+    q: 'Do you handle the full design or just installation?',
+    a: "Both. We work with you from the initial vision through design, material selection, and installation. You get a complete transformation without needing to hire separate contractors.",
   },
   {
-    q: 'Do you remove old grass first?',
-    a: 'Yes. Proper sod installation starts with removing the old lawn, grading the soil, and prepping the surface. We handle all of that before laying a single roll of sod.',
+    q: 'How long does a landscaping project take?',
+    a: "It depends on scope. A simple garden bed or walkway can be done in 1–2 days. Full yard transformations with concrete and planting typically take 1–2 weeks.",
   },
   {
-    q: 'How soon should I water after installation?',
-    a: "Immediately! New sod needs to be watered within 30 minutes of installation. For the first 2 weeks, water 2–3 times daily to keep the sod and soil moist. We'll give you a detailed aftercare schedule.",
+    q: 'Do you offer payment plans for large projects?',
+    a: "We can discuss flexible payment options for larger jobs. Contact us for a free estimate and we'll work out a plan that fits your budget.",
   },
 ]
 
 const reviews = [
   {
-    name: 'Abraham A.',
-    text: "I've been using the Lawncare Bros for about a year and I can't get over how great these young men do!! Very professional, always on time. I really recommend them to everyone — you will be 100% satisfied!",
+    name: 'Jose F.',
+    text: 'The Lawncare Bros never fail to amaze me. Sharp edges, cleanly trimmed bushes, freshly cut grass — their services are delivered in a top of the line manner.',
   },
   {
-    name: 'Irvin S.',
-    text: 'I spotted these guys in Clovis and asked for a quote — extremely professional and provided excellent service. Highly recommend!',
+    name: 'Jose C.',
+    text: 'Very professional workers, on time and always very respectful. Amazing quality work.',
   },
 ]
 
@@ -63,7 +63,7 @@ function Stars() {
   )
 }
 
-export default function SodInstallation() {
+export default function LandscapingHardscape() {
   const [openFaq, setOpenFaq] = useState(null)
   useFadeUp()
 
@@ -72,11 +72,11 @@ export default function SodInstallation() {
       <Navbar />
 
       <section className="sp-hero">
-        <img src="/03_sod_installation.png" alt="" className="sp-hero__img" />
+        <img src="/landscape-hardscape.png" alt="" className="sp-hero__img" />
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">Sod Installation in Fresno & Clovis</h1>
-          <p className="sp-hero__sub">Get a lush, green lawn instantly — no waiting, no guessing.</p>
+          <h1 className="sp-hero__title">Landscaping & Hardscape in Fresno & Clovis</h1>
+          <p className="sp-hero__sub">Full landscaping, cement work, gardening, and outdoor construction services.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>
       </section>

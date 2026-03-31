@@ -73,7 +73,10 @@ export default function Navbar() {
                 <div className="nav__dropdown-menu">
                   <Link to="/services/lawn-maintenance" onClick={() => { setSvcOpen(false); setOpen(false) }}>Lawn Maintenance</Link>
                   <Link to="/services/sod-installation" onClick={() => { setSvcOpen(false); setOpen(false) }}>Sod Installation</Link>
+                  <Link to="/services/irrigation-systems" onClick={() => { setSvcOpen(false); setOpen(false) }}>Irrigation Systems</Link>
+                  <Link to="/services/mulch-river-rock" onClick={() => { setSvcOpen(false); setOpen(false) }}>Mulch & River Rock</Link>
                   <Link to="/services/tree-services" onClick={() => { setSvcOpen(false); setOpen(false) }}>Tree Services</Link>
+                  <Link to="/services/landscaping-hardscape" onClick={() => { setSvcOpen(false); setOpen(false) }}>Landscaping & Hardscape</Link>
                 </div>
               )}
             </li>
