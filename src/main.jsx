@@ -9,10 +9,12 @@ import BlogPost from './pages/BlogPost'
 import LawnMaintenance from './pages/services/LawnMaintenance'
 import SodInstallation from './pages/services/SodInstallation'
 import TreeServices from './pages/services/TreeServices'
+import FloatingCallButton from './components/FloatingCallButton'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <FloatingCallButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/estimate" element={<Estimate />} />
