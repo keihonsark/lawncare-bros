@@ -40,12 +40,37 @@
   margin-bottom: 0.25rem;
 }
 
+@keyframes statGradient {
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}
+
 .stats__num {
   font-family: var(--font-heading);
   font-size: 4rem;
   font-weight: 800;
   color: #4caf6e;
   line-height: 1;
+}
+
+.stats__num--gradient {
+  background: linear-gradient(90deg, #4caf6e, #2dd4bf, #d4af37, #2dd4bf, #4caf6e);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: statGradient 3.5s linear infinite;
+}
+
+.stats__google-stars {
+  font-size: 1.75rem;
+  color: #f5a623;
+  letter-spacing: 3px;
+  margin: 0.25rem 0;
+}
+
+.stats__item--google {
+  gap: 0.35rem;
 }
 
 .stats__counting {
