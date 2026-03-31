@@ -172,7 +172,6 @@ export default function Estimate() {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [phone, setPhone] = useState('')
-  const [email, setEmail] = useState('')
   const [address, setAddress] = useState('')
   const [city, setCity] = useState('')
 
@@ -211,7 +210,6 @@ export default function Estimate() {
       firstName,
       lastName,
       phone,
-      email,
       address,
       city,
       yardSize,
@@ -248,24 +246,19 @@ export default function Estimate() {
         <div className="est-header">
           <div className="container est-header__inner">
             <Link to="/" className="est-back">← Back to Home</Link>
-            <div className="est-logo">
-              <span className="est-logo__dls">DLS</span>
-              <span className="est-logo__sub">Lawn Services</span>
-            </div>
-            <div style={{ width: 120 }} />
           </div>
         </div>
         <div className="est-body">
           <div className="est-card est-success">
             <div className="est-success__check">
               <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                <circle cx="40" cy="40" r="38" stroke="#74c69d" strokeWidth="3" fill="none" className="est-success__circle" />
-                <path d="M24 42l10 10 22-24" stroke="#2d6a4f" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" className="est-success__tick" />
+                <circle cx="40" cy="40" r="38" stroke="#4caf6e" strokeWidth="3" fill="none" className="est-success__circle" />
+                <path d="M24 42l10 10 22-24" stroke="#1a7a3c" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" className="est-success__tick" />
               </svg>
             </div>
             <h2 className="est-success__title">Estimate Sent!</h2>
             <p className="est-success__text">
-              Silvino will call you within a few hours!
+              The Bros will reach out within a few hours!
             </p>
             <p className="est-success__sub">
               Your estimated range: <strong>${formatPrice(totalLow)} – ${formatPrice(totalHigh)}</strong>
@@ -285,11 +278,6 @@ export default function Estimate() {
       <div className="est-header">
         <div className="container est-header__inner">
           <Link to="/" className="est-back">← Back to Home</Link>
-          <div className="est-logo">
-            <span className="est-logo__dls">DLS</span>
-            <span className="est-logo__sub">Lawn Services</span>
-          </div>
-          <div style={{ width: 120 }} />
         </div>
       </div>
 
@@ -318,6 +306,7 @@ export default function Estimate() {
       {/* Card */}
       <div className="est-body">
         <div className="est-card">
+          <img src="/lawncare-bros-logo.png" alt="The Lawncare Bros LLC" className="est-card__logo" />
           <h2 className="est-card__title">{STEP_TITLES[step - 1]}</h2>
 
           {/* STEP 1 */}
@@ -336,10 +325,6 @@ export default function Estimate() {
               <div className="est-field">
                 <label>Phone Number *</label>
                 <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(559) 000-0000" required />
-              </div>
-              <div className="est-field">
-                <label>Email (optional)</label>
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@email.com" />
               </div>
               <div className="est-row">
                 <div className="est-field">
@@ -518,7 +503,7 @@ export default function Estimate() {
               </div>
 
               <p className="est-disclaimer">
-                This is an estimated range. Silvino will confirm exact pricing
+                This is an estimated range. The Bros will confirm exact pricing
                 during your free on-site visit — no obligation.
               </p>
             </div>

@@ -66,19 +66,9 @@
   to { transform: translateX(-50%); }
 }
 
-@keyframes scroll-right {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); }
-}
-
 .rev__marquee {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 1.5rem;
-}
-
-.rev__marquee:last-child {
-  margin-bottom: 0;
 }
 
 .rev__marquee-track {
@@ -88,11 +78,7 @@
 }
 
 .rev__marquee--left .rev__marquee-track {
-  animation: scroll-left 40s linear infinite;
-}
-
-.rev__marquee--right .rev__marquee-track {
-  animation: scroll-right 40s linear infinite;
+  animation: scroll-left 50s linear infinite;
 }
 
 .rev__marquee:hover .rev__marquee-track {

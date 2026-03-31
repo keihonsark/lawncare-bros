@@ -10,15 +10,14 @@
 .cta__overlay {
   position: absolute;
   inset: 0;
-  background: #0d1f17;
+  background: rgba(0, 0, 0, 0.55);
   z-index: 0;
 }
 
 .cta__bg {
   position: absolute;
   inset: 0;
-  background: url('/02_hero_lawn_home.png') center/cover no-repeat;
-  opacity: 0.35;
+  background: url('/hero-image.png') center/cover no-repeat;
   z-index: 1;
 }
 
@@ -31,6 +30,7 @@
 .cta__heading {
   font-family: var(--font-heading);
   font-size: 3.5rem;
+  font-weight: 800;
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -53,20 +53,21 @@
   align-items: center;
   gap: 0.6rem;
   font-family: var(--font-body);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 .cta__btn--call {
-  background: #fff;
-  color: var(--green-dark);
-  padding: 1rem 2.5rem;
+  background: #1a7a3c;
+  color: #fff;
+  font-weight: 700;
+  padding: 1rem 2.2rem;
   border-radius: 100px;
 }
 
 .cta__btn--call:hover {
-  background: var(--green-light);
+  background: #0f4d25;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
@@ -74,8 +75,8 @@
 .cta__btn--email {
   background: transparent;
   color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  padding: 1rem 2.5rem;
+  border: 2px solid #fff;
+  padding: 1rem 2.2rem;
   border-radius: 100px;
 }
 

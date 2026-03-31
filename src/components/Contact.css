@@ -86,6 +86,24 @@ a.contact__detail-value:hover {
   gap: 1.25rem;
 }
 
+.contact__success {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 400px;
+}
+
+.contact__success h3 {
+  font-size: 1.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__success p {
+  color: #555;
+  font-size: 1.05rem;
+}
+
 .contact__form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -126,7 +144,7 @@ a.contact__detail-value:hover {
   outline: none;
   border-color: var(--green);
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.1);
+  box-shadow: 0 0 0 3px rgba(26, 122, 60, 0.1);
 }
 
 .contact__field textarea {
@@ -138,12 +156,12 @@ a.contact__detail-value:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1.6rem;
-  background: #2d6a4f;
+  background: #1a7a3c;
   color: #fff;
   border: none;
   border-radius: 100px;
   font-family: var(--font-body);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -151,14 +169,9 @@ a.contact__detail-value:hover {
 }
 
 .contact__submit:hover {
-  background: #1b4332;
+  background: #0f4d25;
   transform: translateY(-2px);
-}
-
-.contact__submit:hover {
-  background: var(--green-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(45, 106, 79, 0.3);
+  box-shadow: 0 8px 25px rgba(26, 122, 60, 0.3);
 }
 
 @media (max-width: 900px) {

@@ -1,12 +1,11 @@
 import './About.css'
 
 const checks = [
-  'Licensed & Insured',
+  'Licensed, Insured & Bonded',
+  'Brother-Owned Family Business',
+  'Weekly & Bi-Weekly Plans',
   'Free On-Site Estimates',
-  'Family Owned & Operated',
-  'Reliable, On-Time Service',
-  'Competitive Pricing',
-  'Bilingual (English & Spanish)',
+  'Bilingual Service (English & Spanish)',
 ]
 
 export default function About() {
@@ -15,47 +14,42 @@ export default function About() {
       <div className="container about__grid">
         <div className="about__images">
           <img
-            src="/02_hero_lawn_home.png"
+            src="/hero-image.png"
             alt="Beautiful lawn"
             className="about__img-main"
           />
           <img
-            src="/08_lawn_maintenance.png"
+            src="/hero-image.png"
             alt="Lawn maintenance"
             className="about__img-small"
           />
           <div className="about__badge about__badge--circle">
             <span className="about__badge-num">10+</span>
-            <span className="about__badge-text">Years Serving Fresno</span>
+            <span className="about__badge-text">Years of Experience</span>
           </div>
         </div>
 
         {/* Mobile-only single image + pill */}
         <div className="about__mobile-img">
-          <img src="/02_hero_lawn_home.png" alt="Beautiful lawn" />
+          <img src="/hero-image.png" alt="Beautiful lawn" />
           <div className="about__badge about__badge--pill">
-            10+ Years Serving Fresno
+            10+ Years of Experience
           </div>
         </div>
 
         <div className="about__content">
           <div className="about__nextdoor-badge">
-            <span>🌿 Neighborhood Favorite 2022 &middot; 2023 &middot; 2024</span>
+            <span>⭐ Top-Rated on Google &amp; Facebook</span>
           </div>
-          <p className="about__eyebrow">About DLS Lawn Services</p>
-          <h2 className="about__heading sh__heading">We Take Pride In Every <span className="sh__outline">Yard</span></h2>
+          <p className="about__eyebrow">About The Lawncare Bros</p>
+          <h2 className="about__heading sh__heading" style={{ fontWeight: 800 }}>Two <span style={{ color: '#4caf6e' }}>Brothers.</span> One <span style={{ color: '#4caf6e' }}>Mission.</span> 💪</h2>
           <div className="sh__line sh--left" style={{ margin: '0 0 0.75rem 0' }} />
           <p className="about__text">
-            Founded by Silvino Dominguez, DLS Lawn Services is a family-owned
-            business built on hard work, integrity, and a genuine love for
-            transforming outdoor spaces. For over a decade, we've helped
-            homeowners and businesses across Fresno, Clovis, and the Central
-            Valley maintain beautiful, healthy landscapes they can be proud of.
-          </p>
-          <p className="about__text">
-            From routine mowing to full landscape overhauls, we treat every
-            property like it's our own — because your satisfaction is what keeps
-            our family business growing.
+            The Lawncare Bros LLC is a family business built on hard work, loyalty,
+            and pride in every yard we touch. As a licensed, insured, and bonded LLC,
+            we bring professional-grade results to homeowners across Fresno and Clovis.
+            From routine mowing to full landscape transformations — we treat every
+            property like it's our own.
           </p>
 
           <ul className="about__checks">

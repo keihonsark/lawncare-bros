@@ -1,5 +1,5 @@
 .stats {
-  background: #1b4332;
+  background: var(--black);
   background-image: repeating-linear-gradient(
     45deg,
     transparent,
@@ -9,8 +9,8 @@
   );
   padding: 4.5rem 0;
   position: relative;
-  border-top: 1px solid #52b788;
-  border-bottom: 1px solid #52b788;
+  border-top: 1px solid #4caf6e;
+  border-bottom: 1px solid #4caf6e;
 }
 
 .stats__grid {
@@ -26,14 +26,14 @@
   align-items: center;
   gap: 0.5rem;
   padding: 2rem 1.5rem;
-  border: 1px solid rgba(82, 183, 136, 0.3);
+  border: 1px solid rgba(76, 175, 110, 0.3);
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(82, 183, 136, 0.1);
+  box-shadow: 0 0 20px rgba(76, 175, 110, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
 .stats__item:hover {
-  box-shadow: 0 0 30px rgba(82, 183, 136, 0.2);
+  box-shadow: 0 0 30px rgba(76, 175, 110, 0.2);
 }
 
 .stats__icon {
@@ -43,9 +43,17 @@
 .stats__num {
   font-family: var(--font-heading);
   font-size: 4rem;
-  font-weight: 700;
-  color: #74c69d;
+  font-weight: 800;
+  color: #4caf6e;
   line-height: 1;
+}
+
+.stats__counting {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(76, 175, 110, 0.5);
 }
 
 .stats__label {

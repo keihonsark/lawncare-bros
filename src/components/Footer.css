@@ -1,5 +1,5 @@
 .footer {
-  background: var(--green-dark);
+  background: var(--black);
   color: rgba(255, 255, 255, 0.7);
   padding-top: 4rem;
 }
@@ -17,22 +17,6 @@
   flex-direction: column;
   line-height: 1;
   margin-bottom: 1rem;
-}
-
-.footer__logo-dls {
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 2px;
-}
-
-.footer__logo-sub {
-  font-size: 0.6rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--green-light);
 }
 
 .footer__desc {

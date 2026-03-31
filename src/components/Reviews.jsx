@@ -2,45 +2,34 @@ import './Reviews.css'
 
 const reviews = [
   {
-    name: 'Jorge G.',
-    text: 'I had really overgrown grass and weeds everywhere, and Silvino came through and took care of it fast. He was super friendly, professional, and clearly knows what he\'s doing. Highly recommend.',
+    name: 'Brian R.',
+    text: 'The Lawncare Bros come weekly and I cannot express how satisfied I always am. Always show up on time, ask if any other services are needed, and keep my lawn looking fabulous with those stripes.',
   },
   {
-    name: 'Theresa B.',
-    text: 'I\'m a new mom and my husband is a recent amputee. DLS showed our lawns some love for a very reasonable price. We can\'t wait to have them back every week.',
+    name: 'Abraham A.',
+    text: "I've been using the Lawncare Bros for about a year and I can't get over how great these young men do!! Very professional, always on time. I really recommend them to everyone — you will be 100% satisfied!",
   },
   {
-    name: 'Citlalli G.',
-    text: 'My experience with DLS Lawn Services is consistently outstanding. My lawn always looks impeccable, they are very punctual, and they communicate effectively.',
+    name: 'Jose F.',
+    text: 'The Lawncare Bros never fail to amaze me. Sharp edges, cleanly trimmed bushes, freshly cut grass — their services are delivered in a top of the line manner.',
   },
   {
-    name: 'Lilia L.',
-    text: 'Silvino came that same afternoon, gave me a fair price, came the next day as agreed, and did an excellent job. He speaks Spanish too!',
+    name: 'Emiliano A.',
+    text: 'Absolutely top-notch! Professional, reliable, and extremely detail-oriented. Clean edges, perfect mowing lines, and thoughtful touches that make the yard look incredible.',
   },
   {
-    name: 'Oliver S.',
-    text: 'I really recommend DLS lawn services — they did a really good job and were very professional. I would definitely call them again.',
+    name: 'Jose C.',
+    text: 'Very professional workers, on time and always very respectful. Amazing quality work.',
   },
   {
-    name: 'Clarin B.',
-    text: 'They get the job done on time at a very affordable price. So kind with great communication.',
+    name: 'Irvin S.',
+    text: 'I spotted these guys in Clovis and asked for a quote — extremely professional and provided excellent service. Highly recommend!',
   },
   {
-    name: 'Fabiola E.',
-    text: 'I personally recommend his landscaping service. He\'s a very loyal gentleman, always on time.',
-  },
-  {
-    name: 'Medina C.',
-    text: 'I had very overgrown grass, and after he finished it looked brand new. I recommend DLS lawn services.',
-  },
-  {
-    name: 'Verónica S.',
-    text: 'I contacted DLS for some gardening work and their services met my requirements. Excellent work.',
+    name: 'Messiah O.',
+    text: 'Very professional, always make sure to leave my yard looking clean and sharp.',
   },
 ]
-
-const row1 = reviews.slice(0, 5)
-const row2 = reviews.slice(4)
 
 function Stars() {
   return (
@@ -70,10 +59,10 @@ function ReviewCard({ r }) {
   )
 }
 
-function MarqueeRow({ items, direction }) {
-  const doubled = [...items, ...items]
+function Marquee() {
+  const doubled = [...reviews, ...reviews]
   return (
-    <div className={`rev__marquee rev__marquee--${direction}`}>
+    <div className="rev__marquee rev__marquee--left">
       <div className="rev__marquee-track">
         {doubled.map((r, i) => (
           <ReviewCard key={`${r.name}-${i}`} r={r} />
@@ -100,12 +89,11 @@ export default function Reviews() {
           </svg>
           <span className="rev__google-score">5.0</span>
           <span className="rev__google-stars">★★★★★</span>
-          <span className="rev__google-count">11 Reviews</span>
+          <span className="rev__google-count">7 Google Reviews</span>
         </div>
       </div>
 
-      <MarqueeRow items={row1} direction="left" />
-      <MarqueeRow items={row2} direction="right" />
+      <Marquee />
     </section>
   )
 }

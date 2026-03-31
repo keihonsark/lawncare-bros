@@ -11,32 +11,32 @@ const badges = [
       </svg>
     ),
     title: '5.0 ★★★★★',
-    sub: '11 Reviews on Google',
+    sub: '7 Reviews on Google',
   },
   {
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <path d="M3 9.5L12 3l9 6.5V21H3V9.5z" fill="#74c69d" stroke="#2d6a4f" strokeWidth="1.5"/>
-        <rect x="9" y="14" width="6" height="7" rx="1" fill="#2d6a4f"/>
+        <circle cx="12" cy="12" r="11" fill="#1877F2"/>
+        <path d="M16.5 12.5h-2.5v7h-3v-7h-2v-2.5h2v-1.5c0-2.2 1-3.5 3.5-3.5h2v2.5h-1.5c-.8 0-1 .3-1 1v1.5h2.5l-.5 2.5z" fill="#fff"/>
       </svg>
     ),
-    title: 'Neighborhood Favorite',
-    sub: '2022 · 2023 · 2024',
+    title: 'Active on Facebook',
+    sub: 'thelawncarebrosllc',
   },
   {
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#74c69d"/>
-        <circle cx="12" cy="9" r="3" fill="#fff"/>
+        <path d="M12 2L4 7v6c0 5.25 3.44 10.15 8 11.3 4.56-1.15 8-6.05 8-11.3V7l-8-5z" fill="#4caf6e"/>
+        <path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    title: 'Serving Fresno Since 2010',
-    sub: 'Family Owned & Operated',
+    title: 'Licensed · Insured · Bonded',
+    sub: 'Verified LLC',
   },
   {
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#74c69d"/>
+        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#4caf6e"/>
       </svg>
     ),
     title: 'Se Habla Español',

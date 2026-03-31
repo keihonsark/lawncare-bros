@@ -1,9 +1,10 @@
 :root {
-  --green: #2d6a4f;
-  --green-dark: #1b4332;
-  --green-light: #74c69d;
-  --green-pale: #f0faf5;
-  --font-heading: 'Playfair Display', serif;
+  --green: #1a7a3c;
+  --green-dark: #0f4d25;
+  --green-light: #4caf6e;
+  --green-pale: #f0fdf4;
+  --black: #0a0a0a;
+  --font-heading: 'Outfit', sans-serif;
   --font-body: 'Outfit', sans-serif;
 }
 
@@ -31,6 +32,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--green-dark);
   line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 
 a {
@@ -116,7 +119,7 @@ img {
 }
 
 .sh__outline {
-  background: linear-gradient(90deg, #2d6a4f, #52b788, #2d6a4f);
+  background: linear-gradient(90deg, #1a7a3c, #4caf6e, #1a7a3c);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -131,7 +134,7 @@ img {
 .sh__line {
   width: 0;
   height: 3px;
-  background: #52b788;
+  background: #4caf6e;
   border-radius: 2px;
   margin: 0 auto 0.75rem;
   transition: width 0.5s ease 0.3s;

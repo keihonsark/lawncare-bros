@@ -1,12 +1,12 @@
 import './Services.css'
 
 const services = [
-  { img: '/08_lawn_maintenance.png', icon: '🌱', title: 'Lawn Maintenance', desc: 'Regular mowing, edging, and fertilization to keep your lawn pristine all year long.' },
-  { img: '/06_sprinkler_system.png', icon: '💧', title: 'Sprinkler Systems', desc: 'Custom sprinkler design, installation, and repair for reliable, even coverage.' },
-  { img: '/07_tree_service.png', icon: '🌳', title: 'Tree Services', desc: 'Professional trimming, removal, and stump grinding by experienced crews.' },
-  { img: '/04_yard_cleanup.png', icon: '🍂', title: 'Yard Clean-Ups', desc: 'Seasonal debris removal and overgrowth cleanup for a fresh, tidy property.' },
-  { img: '/03_sod_installation.png', icon: '🏡', title: 'Sod Installation', desc: 'Premium sod laid with care for an instant, lush green lawn transformation.' },
-  { img: '/01_weed_control.png', icon: '🧹', title: 'Weed Control', desc: 'Targeted weed management that eliminates unwanted growth without harming your lawn.' },
+  { img: '/08_lawn_maintenance.png', icon: '🌱', title: 'Lawn Maintenance', desc: 'Mowing, edging, trimming, and blowing. Weekly and bi-weekly plans to keep your lawn sharp all season.' },
+  { img: '/03_sod_installation.png', icon: '🏡', title: 'Sod & Turf Installation', desc: 'Fresh sod laid professionally for an instant lush lawn. We handle prep, install, and aftercare.' },
+  { img: '/06_sprinkler_system.png', icon: '💧', title: 'Irrigation Systems', desc: 'Sprinkler and drip system installation and repair for efficient, reliable watering.' },
+  { img: '/mulch.png', icon: '🪨', title: 'Mulch & River Rock', desc: 'Decorative ground cover installation to protect your plants and boost curb appeal.' },
+  { img: '/07_tree_service.png', icon: '🌳', title: 'Tree & Stump Services', desc: 'Professional tree trimming, removal, and stump grinding by experienced crews.' },
+  { img: '/landscape-hardscape.png', icon: '🏗️', title: 'Landscaping & Hardscape', desc: 'Full landscaping, cement work, gardening, and construction services.' },
 ]
 
 export default function Services() {

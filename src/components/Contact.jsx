@@ -1,6 +1,24 @@
+import { useState } from 'react'
 import './Contact.css'
 
 export default function Contact() {
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const form = e.target
+    try {
+      await fetch('https://formspree.io/f/xpqodbdv', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      })
+      setSubmitted(true)
+    } catch {
+      setSubmitted(true)
+    }
+  }
+
   return (
     <section id="contact" className="contact fade-up">
       <div className="container contact__grid">
@@ -10,7 +28,7 @@ export default function Contact() {
           <div className="sh__line" style={{ margin: '0 0 0.75rem 0' }} />
           <p className="contact__text">
             Have a question or ready to schedule? Reach out and we'll get back
-            to you within 24 hours.
+            to you within a few hours.
           </p>
 
           <div className="contact__details">
@@ -20,17 +38,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="contact__detail-label">Phone</p>
-                <a href="tel:5592602945" className="contact__detail-value">(559) 260-2945</a>
-              </div>
-            </div>
-
-            <div className="contact__detail">
-              <div className="contact__detail-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-              </div>
-              <div>
-                <p className="contact__detail-label">Email</p>
-                <a href="mailto:dominguezsilvino4@gmail.com" className="contact__detail-value">dominguezsilvino4@gmail.com</a>
+                <a href="tel:5594583592" className="contact__detail-value">(559) 458-3592</a>
               </div>
             </div>
 
@@ -46,58 +54,69 @@ export default function Contact() {
           </div>
         </div>
 
-        <form
-          className="contact__form"
-          action="https://formspree.io/f/xpqodbdv"
-          method="POST"
-        >
-          <div className="contact__form-row">
-            <div className="contact__field">
-              <label htmlFor="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" required />
+        {submitted ? (
+          <div className="contact__form contact__success">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="#4caf6e" strokeWidth="3" fill="none" />
+              <path d="M20 34l8 8 16-18" stroke="#1a7a3c" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            </svg>
+            <h3>Message Sent!</h3>
+            <p>The Bros will call you within a few hours!</p>
+          </div>
+        ) : (
+          <form
+            className="contact__form"
+            onSubmit={handleSubmit}
+          >
+            <div className="contact__form-row">
+              <div className="contact__field">
+                <label htmlFor="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div className="contact__field">
+                <label htmlFor="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
             </div>
+
             <div className="contact__field">
-              <label htmlFor="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" required />
+              <label htmlFor="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" required />
             </div>
-          </div>
 
-          <div className="contact__field">
-            <label htmlFor="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
+            <div className="contact__field">
+              <label htmlFor="service">Service</label>
+              <select id="service" name="service" defaultValue="">
+                <option value="" disabled>Select a service...</option>
+                <option>Lawn Maintenance</option>
+                <option>Sod & Turf Installation</option>
+                <option>Irrigation Systems</option>
+                <option>Mulch & River Rock</option>
+                <option>Tree & Stump Services</option>
+                <option>Landscaping & Hardscape</option>
+                <option>Mowing & Edging</option>
+                <option>Trimming & Blowing</option>
+                <option>Weekly Maintenance</option>
+                <option>Bi-Weekly Maintenance</option>
+                <option>Sprinkler Systems</option>
+                <option>Drip Irrigation</option>
+                <option>Cement Work</option>
+                <option>Weed Control</option>
+                <option>Trash Removal</option>
+              </select>
+            </div>
 
-          <div className="contact__field">
-            <label htmlFor="service">Service</label>
-            <select id="service" name="service" defaultValue="">
-              <option value="" disabled>Select a service...</option>
-              <option>Lawn Maintenance</option>
-              <option>Mowing and Trimming</option>
-              <option>Edging</option>
-              <option>Aeration</option>
-              <option>Weed Control</option>
-              <option>Fertilizer Application</option>
-              <option>Mulching</option>
-              <option>Sod Installation</option>
-              <option>Sod Removal</option>
-              <option>Tree Trimming</option>
-              <option>Tree Removal</option>
-              <option>Stump Grinding</option>
-              <option>Sprinkler Systems</option>
-              <option>Drip Irrigation</option>
-            </select>
-          </div>
+            <div className="contact__field">
+              <label htmlFor="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." />
+            </div>
 
-          <div className="contact__field">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." />
-          </div>
-
-          <button type="submit" className="contact__submit">
-            Send Message
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </button>
-        </form>
+            <button type="submit" className="contact__submit">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        )}
       </div>
     </section>
   )

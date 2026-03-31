@@ -5,11 +5,12 @@
   right: 0;
   z-index: 1000;
   padding: 0;
-  transition: background 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease;
+  background: transparent;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
 }
 
 .nav--scrolled {
-  background: #fff;
+  background: #0a0a0a;
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.08);
 }
 
@@ -23,48 +24,8 @@
 /* Logo */
 .nav__logo {
   display: flex;
-  flex-direction: column;
-  line-height: 1;
+  align-items: center;
   transition: color 0.3s;
-}
-
-.nav__logo-dls {
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  background: linear-gradient(90deg, #52b788, #b7e4c7, #52b788);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmerLogo 3s linear infinite;
-}
-
-@keyframes shimmerLogo {
-  to { background-position: 200% center; }
-}
-
-.nav__logo-sub {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: rgba(255, 255, 255, 0.7);
-  transition: color 0.35s;
-}
-
-.nav--scrolled .nav__logo-dls {
-  background: linear-gradient(90deg, #1b4332, #52b788, #1b4332);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.nav--scrolled .nav__logo-sub {
-  color: var(--green);
 }
 
 /* Menu */
@@ -83,7 +44,7 @@
 .nav__links a {
   font-weight: 500;
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: #fff;
   transition: color 0.25s;
   position: relative;
 }
@@ -104,11 +65,11 @@
 }
 
 .nav--scrolled .nav__links a {
-  color: #444;
+  color: #fff;
 }
 
 .nav--scrolled .nav__links a:hover {
-  color: var(--green);
+  color: var(--green-light);
 }
 
 /* Estimate button */
@@ -117,16 +78,16 @@
   align-items: center;
   padding: 0.55rem 1.4rem;
   border-radius: 100px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.85rem;
-  background: #2d6a4f;
+  background: #1a7a3c;
   color: #fff;
   white-space: nowrap;
   transition: all 0.3s ease;
 }
 
 .nav__estimate:hover {
-  background: #1b4332;
+  background: #0f4d25;
   transform: scale(1.03);
 }
 
@@ -137,7 +98,7 @@
   gap: 0.5rem;
   padding: 0.55rem 1.25rem;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
   background: var(--green);
   color: #fff;
@@ -176,7 +137,7 @@
 }
 
 .nav--scrolled .nav__hamburger span {
-  background: var(--green-dark);
+  background: #fff;
 }
 
 .nav__hamburger.active span:nth-child(1) {
