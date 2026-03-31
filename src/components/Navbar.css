@@ -91,6 +91,26 @@
   transform: scale(1.03);
 }
 
+/* Client Portal */
+.nav__portal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.nav__portal:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 /* Phone pill */
 .nav__phone {
   display: inline-flex;
@@ -297,5 +317,10 @@
   .nav__dropdown-menu a {
     font-size: 0.95rem;
     padding: 0.5rem 0.75rem;
+  }
+
+  .nav__portal {
+    color: #555;
+    border-color: #ddd;
   }
 }

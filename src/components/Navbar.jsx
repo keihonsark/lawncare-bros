@@ -85,6 +85,10 @@ export default function Navbar() {
             <li><a href="#areas" onClick={() => setOpen(false)}>Areas</a></li>
             <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
           </ul>
+          <a href="https://lawncarebros.base44.app/client-portal" target="_blank" rel="noopener noreferrer" className="nav__portal" onClick={() => setOpen(false)}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            Client Portal
+          </a>
           <Link to="/estimate" className="nav__estimate" onClick={() => setOpen(false)}>
             Get Instant Estimate
           </Link>

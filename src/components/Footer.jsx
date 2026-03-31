@@ -34,6 +34,13 @@ export default function Footer() {
             <li>Mon – Sun: 6AM – 9PM</li>
           </ul>
         </div>
+
+        <div className="footer__col">
+          <h4>Existing Clients</h4>
+          <ul>
+            <li><a href="https://lawncarebros.base44.app/client-portal" target="_blank" rel="noopener noreferrer">Client Login →</a></li>
+          </ul>
+        </div>
       </div>
 
       <div className="footer__bottom">
