@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: 'How soon should I water after installation?',
-    a: 'Immediately! New sod needs to be watered within 30 minutes of installation. For the first 2 weeks, water 2–3 times daily to keep the sod and soil moist. We'll give you a detailed aftercare schedule.',
+    a: "Immediately! New sod needs to be watered within 30 minutes of installation. For the first 2 weeks, water 2–3 times daily to keep the sod and soil moist. We'll give you a detailed aftercare schedule.",
   },
 ]
 

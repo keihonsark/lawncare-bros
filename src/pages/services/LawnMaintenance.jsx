@@ -37,11 +37,11 @@ const faqs = [
   },
   {
     q: 'What if it rains on my scheduled day?',
-    a: 'We monitor the weather closely. If rain prevents us from servicing your yard, we'll reschedule within 1–2 days at no extra charge.',
+    a: "We monitor the weather closely. If rain prevents us from servicing your yard, we'll reschedule within 1–2 days at no extra charge.",
   },
   {
     q: 'Do I need to be home during service?',
-    a: 'Not at all. As long as we have gate access, we'll take care of everything and leave your yard looking sharp — whether you're home or not.',
+    a: "Not at all. As long as we have gate access, we'll take care of everything and leave your yard looking sharp — whether you're home or not.",
   },
 ]
 
