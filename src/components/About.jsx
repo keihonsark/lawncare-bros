@@ -24,9 +24,17 @@ export default function About() {
             alt="Lawn maintenance"
             className="about__img-small"
           />
-          <div className="about__badge">
+          <div className="about__badge about__badge--circle">
             <span className="about__badge-num">10+</span>
             <span className="about__badge-text">Years Serving Fresno</span>
+          </div>
+        </div>
+
+        {/* Mobile-only single image + pill */}
+        <div className="about__mobile-img">
+          <img src="/02_hero_lawn_home.png" alt="Beautiful lawn" />
+          <div className="about__badge about__badge--pill">
+            10+ Years Serving Fresno
           </div>
         </div>
 

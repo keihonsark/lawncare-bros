@@ -12,6 +12,15 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [open])
+
   return (
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="container nav__inner">
@@ -28,7 +37,14 @@ export default function Navbar() {
           <span /><span /><span />
         </button>
 
+        {open && <div className="nav__overlay" onClick={() => setOpen(false)} />}
+
         <div className={`nav__menu ${open ? 'open' : ''}`}>
+          <button className="nav__close" onClick={() => setOpen(false)} aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" strokeWidth="2" strokeLinecap="round">
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
           <ul className="nav__links">
             <li><a href="#services" onClick={() => setOpen(false)}>Services</a></li>
             <li><a href="#reviews" onClick={() => setOpen(false)}>Reviews</a></li>
